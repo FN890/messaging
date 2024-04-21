@@ -3,6 +3,7 @@
 Environment used: Ubuntu 22.04.4 LTS.
 
 ```
+git clone https://github.com/FN890/messaging.git
 cd messaging
 
 python3 -m venv env
