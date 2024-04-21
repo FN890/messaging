@@ -1,0 +1,116 @@
+[
+    {
+        "model": "app.customuser",
+        "pk": 1,
+        "fields": {
+            "username": "Astrid"
+        }
+    },
+    {
+        "model": "app.customuser",
+        "pk": 2,
+        "fields": {
+            "username": "William"
+        }
+    },
+    {
+        "model": "app.message",
+        "pk": 1,
+        "fields": {
+            "created": "2999-01-01T14:0:00+02:00",
+            "recipient": 2,
+            "sender": 1,
+            "message": "Hello William, how are you today?"
+        }
+    },
+    {
+        "model": "app.message",
+        "pk": 2,
+        "fields": {
+            "created": "2999-01-01T14:05:00+02:00",
+            "recipient": 1,
+            "sender": 2,
+            "message": "Hi Astrid! I am doing great, how about you?"
+        }
+    },
+    {
+        "model": "app.message",
+        "pk": 3,
+        "fields": {
+            "created": "2000-01-02T12:0:00+02:00",
+            "recipient": 1,
+            "sender": 2,
+            "message": "Lunch?"
+        }
+    },
+    {
+        "model": "app.message",
+        "pk": 4,
+        "fields": {
+            "created": "2000-01-02T12:15:00+02:00",
+            "recipient": 2,
+            "sender": 1,
+            "message": "Yes, see you at 12:30!"
+        }
+    },
+    {
+        "model": "app.message",
+        "pk": 5,
+        "fields": {
+            "created": "2000-01-03T12:0:00+02:00",
+            "recipient": 1,
+            "sender": 2,
+            "message": "What time are you going for lunch?"
+        }
+    },
+    {
+        "model": "app.message",
+        "pk": 6,
+        "fields": {
+            "created": "2000-01-03T12:15:00+02:00",
+            "recipient": 2,
+            "sender": 1,
+            "message": "Later today, 13:00!"
+        }
+    },
+    {
+        "model": "app.message",
+        "pk": 7,
+        "fields": {
+            "created": "2000-01-03T12:0:00+02:00",
+            "recipient": 2,
+            "sender": 1,
+            "message": "Can I get a copy of the document?"
+        }
+    },
+    {
+        "model": "app.message",
+        "pk": 8,
+        "fields": {
+            "created": "2000-01-03T12:15:00+02:00",
+            "recipient": 1,
+            "sender": 2,
+            "message": "Sure, come to my office."
+        }
+    },
+    {
+        "model": "app.message",
+        "pk": 9,
+        "fields": {
+            "created": "2000-01-04T12:0:00+02:00",
+            "recipient": 2,
+            "sender": 1,
+            "message": "How is work going?"
+        }
+    },
+    {
+        "model": "app.message",
+        "pk": 10,
+        "fields": {
+            "created": "2000-01-04T12:15:00+02:00",
+            "recipient": 1,
+            "sender": 2,
+            "message": "Good! :)"
+        }
+    }
+]
