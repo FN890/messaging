@@ -22,6 +22,9 @@ username: admin
 password admin
 url: http://127.0.0.1:8000/admin/
 
+### Load test data (optional)
+python manage.py loaddata messaging/app/fixtures/example_data.json
+
 ### Get users.
 ```
 curl -X GET "http://127.0.0.1:8000/api/v1/get-users/"
@@ -37,7 +40,7 @@ curl -X POST "http://127.0.0.1:8000/api/v1/post-users/" -H "Content-Type: applic
 curl -X DELETE "http://127.0.0.1:8000/api/v1/delete-users/?user_id=<user_id>"
 ```
 
-### Get new messages by last upate. Example last_update: 2024-04-21T11:43:09.335413Z (Coordinated Universal Time)
+### Get new messages by last update. Example last_update: 2024-04-21T11:43:09.335413Z (Coordinated Universal Time)
 ```
 curl -X GET "http://127.0.0.1:8000/api/v1/get-messages/<user_id>/<last_update>/"
 ```
