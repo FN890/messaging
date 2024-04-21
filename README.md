@@ -19,11 +19,13 @@ python manage.py runserver
 On the admin page users and messages can be viewed and modified without using curl.
 
 username: admin
-password admin
+password: admin
 url: http://127.0.0.1:8000/admin/
 
 ### Load test data (optional)
+```
 python manage.py loaddata messaging/app/fixtures/example_data.json
+```
 
 ### Get users.
 ```
@@ -35,7 +37,7 @@ curl -X GET "http://127.0.0.1:8000/api/v1/get-users/"
 curl -X POST "http://127.0.0.1:8000/api/v1/post-users/" -H "Content-Type: application/json" -d '{"username": "<user_name>"}'
 ```
 
-### Delete user. Note: will delete all sent and received messages.
+### Delete user. Note: Will delete all sent and received messages for that user.
 ```
 curl -X DELETE "http://127.0.0.1:8000/api/v1/delete-users/?user_id=<user_id>"
 ```
